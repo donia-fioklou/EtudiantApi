@@ -5,7 +5,7 @@ from urllib.parse import quote_plus
 
 
 app=Flask(__name__)
-motPasse = quote_plus('Martin47.')
+motPasse = quote_plus('password')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:{}@localhost:5432/appg3'.format(motPasse)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
